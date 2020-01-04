@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    /*background-color: lightslategray;*/
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color:darkcyan;
+}
+
+header p{
+    font-size: 20px;
+    text-align: center;
+}
+.marq {
+    color: #5b3;
+    text-align: center;
+    font-size: 12px;
+}
+.taps {
+    background: lightblue;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.taps > div {
+    height: 100px;
+    width: 100%;
+    flex: 1;
+}
+.tap1 {
+    background: #60d394;
+}
+.tap2 {
+    background: #d36060;
+}
+.tap3 {
+    background: #c060d3;
+}
+.tap4 {
+    background: #d3d160;
+}
+.tap5 {
+    background: #606bd3;
+}
+.tap6 {
+    background: #60c2d3;
+}
+.tap7 {
+    background: #333ede;
+}
+.tap8 {
+    background: #6defff;
+}
+
+.visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+}
+
+@media only screen and (min-width: 1000px) {
+    .app{
+        min-height: 100vh;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header h1 {
+        margin: 50px 0px 30px 0px;
+        text-align: center;
+        font-size: 40px;
+        text-transform: uppercase;
+        color:darkcyan;
+    }
+    
+    header p{
+        font-size: 10px;
+        text-align: center;
+    
+    }
+    
+    .marq {
+        color: #5b3;
+        text-align: center;
+    }
+    .taps {
+        background: lightblue;
+        width: 100%;
+        display: flex;
+    }
+    
+    .taps > div {
+        height: 100px;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .tap1 {
+        background: #60d394;
+    }
+    .tap2 {
+        background: #d36060;
+    }
+    .tap3 {
+        background: #c060d3;
+    }
+    .tap4 {
+        background: #d3d160;
+    }
+    .tap5 {
+        background: #606bd3;
+    }
+    .tap6 {
+        background: #60c2d3;
+    }
+    .tap7 {
+        background: #333ede;
+    }
+    .tap8 {
+        background: #6defff;
+    }
+    .visual > div {
+        position: absolute;
+        bottom: 0%;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        transform: scale(1);
+        z-index: -1;
+    }
+}
+footer p{
+    font-size: 10px;
+    text-align: center;
+}
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 00%;
+        left: 80%;
+    }
+}
